@@ -16,61 +16,6 @@ public class Faker {
     private final RandomService randomService;
     private final FakeValuesService fakeValuesService;
 
-    private final Ancient ancient;
-    private final App app;
-    private final Artist artist;
-    private final Avatar avatar;
-    private final Lorem lorem;
-    private final Music music;
-    private final Name name;
-    private final Number number;
-    private final Internet internet;
-    private final PhoneNumber phoneNumber;
-    private final Pokemon pokemon;
-    private final Address address;
-    private final Business business;
-    private final Book book;
-    private final ChuckNorris chuckNorris;
-    private final Color color;
-    private final Commerce commerce;
-    private final Company company;
-    private final Crypto crypto;
-    private final IdNumber idNumber;
-    private final Hacker hacker;
-    private final Options options;
-    private final Code code;
-    private final Finance finance;
-    private final Food food;
-    private final GameOfThrones gameOfThrones;
-    private final DateAndTime dateAndTime;
-    private final Demographic demographic;
-    private final Educator educator;
-    private final Shakespeare shakespeare;
-    private final SlackEmoji slackEmoji;
-    private final Space space;
-    private final Superhero superhero;
-    private final Bool bool;
-    private final Team team;
-    private final Beer beer;
-    private final University university;
-    private final Cat cat;
-    private final File file;
-    private final Stock stock;
-    private final LordOfTheRings lordOfTheRings;
-    private final Zelda zelda;
-    private final HarryPotter harryPotter;
-    private final RockBand rockBand;
-    private final Esports esports;
-    private final Friends friends;
-    private final Hipster hipster;
-    private final Job job;
-    private final TwinPeaks twinPeaks;
-    private final RickAndMorty rickAndMorty;
-    private final Yoda yoda;
-    private final Matz matz;
-    private final Witcher witcher;
-    private final Weather weather;
-
     public Faker() {
         this(Locale.ENGLISH);
     }
@@ -86,61 +31,6 @@ public class Faker {
     public Faker(Locale locale, Random random) {
         this.randomService = new RandomService(random);
         this.fakeValuesService = new FakeValuesService(locale, randomService);
-
-        this.ancient = new Ancient(this);
-        this.app = new App(this);
-        this.artist = new Artist(this);
-        this.avatar = new Avatar(this);
-        this.lorem = new Lorem(this);
-        this.music = new Music(this);
-        this.name = new Name(this);
-        this.number = new Number(this);
-        this.internet = new Internet(this);
-        this.phoneNumber = new PhoneNumber(this);
-        this.pokemon = new Pokemon(this);
-        this.address = new Address(this);
-        this.book = new Book(this);
-        this.business = new Business(this);
-        this.chuckNorris = new ChuckNorris(this);
-        this.color = new Color(this);
-        this.idNumber = new IdNumber(this);
-        this.hacker = new Hacker(this);
-        this.company = new Company(this);
-        this.crypto = new Crypto(this);
-        this.commerce = new Commerce(this);
-        this.options = new Options(this);
-        this.code = new Code(this);
-        this.file = new File(this);
-        this.finance = new Finance(this);
-        this.food = new Food(this);
-        this.gameOfThrones = new GameOfThrones(this);
-        this.dateAndTime = new DateAndTime(this);
-        this.demographic = new Demographic(this);
-        this.educator = new Educator(this);
-        this.shakespeare = new Shakespeare(this);
-        this.slackEmoji = new SlackEmoji(this);
-        this.space = new Space(this);
-        this.superhero = new Superhero(this);
-        this.team = new Team(this);
-        this.bool = new Bool(this);
-        this.beer = new Beer(this);
-        this.university = new University(this);
-        this.cat = new Cat(this);
-        this.stock = new Stock(this);
-        this.lordOfTheRings = new LordOfTheRings(this);
-        this.zelda = new Zelda(this);
-        this.harryPotter = new HarryPotter(this);
-        this.rockBand = new RockBand(this);
-        this.esports = new Esports(this);
-        this.friends = new Friends(this);
-        this.hipster = new Hipster(this);
-        this.job = new Job(this);
-        this.twinPeaks = new TwinPeaks(this);
-        this.rickAndMorty = new RickAndMorty(this);
-        this.yoda = new Yoda(this);
-        this.matz = new Matz(this);
-        this.witcher = new Witcher(this);
-        this.weather = new Weather(this);
     }
 
     /**
@@ -261,219 +151,219 @@ public class Faker {
     }
 
     public Ancient ancient() {
-        return ancient;
+        return new Ancient(this);
     }
 
     public App app() {
-        return app;
+        return new App(this);
     }
 
     public Artist artist() {
-        return artist;
+        return new Artist(this);
     }
 
     public Avatar avatar() {
-        return avatar;
+        return new Avatar(this);
     }
 
     public Music music() {
-        return music;
+        return new Music(this);
     }
 
     public Name name() {
-        return name;
+        return new Name(this);
     }
 
     public Number number() {
-        return number;
+        return new Number(this);
     }
 
     public Internet internet() {
-        return internet;
+        return new Internet(this);
     }
 
     public PhoneNumber phoneNumber() {
-        return phoneNumber;
+        return new PhoneNumber(this);
     }
 
     public Pokemon pokemon() {
-        return pokemon;
+        return new Pokemon(this);
     }
 
     public Lorem lorem() {
-        return lorem;
+        return new Lorem(this);
     }
 
     public Address address() {
-        return address;
+        return new Address(this);
     }
 
     public Book book() {
-        return book;
+        return new Book(this);
     }
 
     public Business business() {
-        return business;
+        return new Business(this);
     }
 
     public ChuckNorris chuckNorris() {
-        return chuckNorris;
+        return new ChuckNorris(this);
     }
 
     public Color color() {
-        return color;
+        return new Color(this);
     }
 
     public Commerce commerce() {
-        return commerce;
+        return new Commerce(this);
     }
 
     public Company company() {
-        return company;
+        return new Company(this);
     }
 
     public Crypto crypto() {
-        return crypto;
+        return new Crypto(this);
     }
 
     public Hacker hacker() {
-        return hacker;
+        return new Hacker(this);
     }
 
     public IdNumber idNumber() {
-        return idNumber;
+        return new IdNumber(this);
     }
 
     public Options options() {
-        return options;
+        return new Options(this);
     }
 
     public Code code() {
-        return code;
+        return new Code(this);
     }
 
     public File file() {
-        return file;
+        return new File(this);
     }
 
     public Finance finance() {
-        return finance;
+        return new Finance(this);
     }
 
     public Food food() {
-        return food;
+        return new Food(this);
     }
 
     public GameOfThrones gameOfThrones() {
-        return gameOfThrones;
+        return new GameOfThrones(this);
     }
 
     public DateAndTime date() {
-        return dateAndTime;
+        return new DateAndTime(this);
     }
 
     public Demographic demographic() {
-        return demographic;
+        return new Demographic(this);
     }
 
     public Educator educator() {
-        return educator;
+        return new Educator(this);
     }
 
     public SlackEmoji slackEmoji() {
-        return slackEmoji;
+        return new SlackEmoji(this);
     }
 
     public Shakespeare shakespeare() {
-        return shakespeare;
+        return new Shakespeare(this);
     }
 
     public Space space() {
-        return space;
+        return new Space(this);
     }
 
     public Superhero superhero() {
-        return superhero;
+        return new Superhero(this);
     }
 
     public Bool bool() {
-        return bool;
+        return new Bool(this);
     }
 
     public Team team() {
-        return team;
+        return new Team(this);
     }
 
     public Beer beer() {
-        return beer;
+        return new Beer(this);
     }
 
     public University university() {
-        return university;
+        return new University(this);
     }
 
     public Cat cat() {
-        return cat;
+        return new Cat(this);
     }
 
     public Stock stock() {
-        return stock;
+        return new Stock(this);
     }
 
     public LordOfTheRings lordOfTheRings() {
-        return lordOfTheRings;
+        return new LordOfTheRings(this);
     }
 
     public Zelda zelda() {
-        return zelda;
+        return new Zelda(this);
     }
 
     public HarryPotter harryPotter() {
-        return harryPotter;
+        return new HarryPotter(this);
     }
 
     public RockBand rockBand() {
-        return rockBand;
+        return new RockBand(this);
     }
 
     public Esports esports() {
-        return esports;
+        return new Esports(this);
     }
 
     public Friends friends() {
-        return friends;
+        return new Friends(this);
     }
 
     public Hipster hipster() {
-        return hipster;
+        return new Hipster(this);
     }
 
     public Job job() {
-        return job;
+        return new Job(this);
     }
 
     public TwinPeaks twinPeaks() {
-        return twinPeaks;
+        return new TwinPeaks(this);
     }
 
     public RickAndMorty rickAndMorty() {
-        return rickAndMorty;
+        return new RickAndMorty(this);
     }
 
     public Yoda yoda() {
-        return yoda;
+        return new Yoda(this);
     }
 
     public Matz matz() {
-        return matz;
+        return new Matz(this);
     }
 
     public Witcher witcher() {
-        return witcher;
+        return new Witcher(this);
     }
 
     public Weather weather() {
-        return weather;
+        return new Weather(this);
     }
 
     public String resolve(String key) {
